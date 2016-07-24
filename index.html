@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>极客学院IT在线教育平台-中国最大的IT职业在线教育平台</title>
+    <link rel="stylesheet" href="Css/cube.css" type="text/css"/>
+    <link rel="stylesheet" href="Css/style.css" type="text/css"/>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div id="container">
+    <header>
+        <div id="navBox-one">
+            <div><a id="logo"></a></div>
+            <div id="input">
+                <a class="search"></a>
+                <div class="course">
+                    <a href="#">Android</a>
+                    <a href="#">ios</a>
+                    <a href="#">HTML5</a>
+                </div>
+                <input type="text" placeholder="搜索课程、问答或Wiki"/>
+            </div>
+            <div id="clo">
+                <div id="yellow" class="yellow" onclick="yellow()"></div>
+                <div id="green" class="green" onclick="green()"></div>
+                <div id="red" class="red" onclick="red()"></div>
+            </div>
+            <div id="register">
+                <a href="#" id="message"></a>
+                <span></span>
+                <a href="#">QQ登录</a>
+                <span></span>
+                <a href="#">登录</a>
+                <span></span>
+                <a href="#">注册</a>
+            </div>
+        </div>
+        <br/>
+        <div id="hr1"></div>
+        <div id="navBox-tow">
+            <div id="h2left">
+                <a href="#">首页</a>
+                <a href="#">职业课程</a>
+                <a href="#">就业学习</a>
+                <a href="#">极客社区</a>
+                <a href="#">极客+</a>
+            </div>
+            <div id="h2right">
+                <a href="#" ><span id="app"></span><span>APP下载</span></a>
+                <a href="#" ><span id="course"></span><span>求课程</span></a>
+                <a href="#" ><span id="vip"></span><span>VIP会员</span></a>
+            </div>
+        </div>
+        <div id="hr2"></div>
+    </header>
+    <!--中间这部分-->
+    <article>
+        <div id="article">
+            <div id="flash">
+                <div id="f_middle">
+                    <div id="fm_img"></div>
+                    <div id="fm_course">
+                        <div id="html5">
+                            <div class="html5"></div><p>HTML5/Web前端工程师</p><p style="color: #666;">
+                            前腾讯高级前端工程师授课
+                        </p></div>
+                        <div id="Android"><div class="Android"></div><p>Android开发工程师</p><p style="color: #666;">
+                            挑战月薪2万的工作机会
+                        </p></div>
+                        <div id="apple"><div class="apple"></div><p>iOS开发工程师</p><p style="color: #666;">
+                            基于最新Swift语言
+                        </p></div>
+                    </div>
+                </div>
+                <div id="f_left">
+                    <div><a href="#">移动开发</a><span></span></div>
+                    <hr/>
+                    <div><a href="#">前端开发</a><span></span></div>
+                    <hr/>
+                    <div><a href="#">后端开发</a><span></span></div>
+                    <hr/>
+                    <div><a href="#">基础知识</a><span></span></div>
+                    <hr/>
+                    <div><a href="#">云计算&大数据</a><span></span></div>
+                    <hr/>
+                    <div><a href="#">智能硬件&物联网</a><span></span></div>
+                    <hr/>
+                    <div><a href="#">数据库</a><span></span></div>
+                    <hr/>
+                    <div><a href="#">认证考试</a><span></span></div>
+                    <hr/>
+                    <div><a href="#">企业IT</a><span></span></div>
+                    <hr/>
+                    <div><a href="#">设计&产品&测试</a><span></span></div>
+                </div>
+                <div id="f_right">
+                    <div id="fr_kx">
+                        <h3 class="">快讯</h3>
+                      <ul>
+                          <li><a href="#" style="color: #080808;">
+                              [征集]上传作品赢3000元奖学金
+                          </a></li>
+                          <li><a href="#" style="color: red;">
+                              Node.js知识体系图免费一周！
+                          </a></li>
+                          <li><a href="#" style="color: #080808;">
+                              精品系列课程限免中！不要错过！
+                          </a></li>
+                          <li><a href="#" style="color: red;font-weight: bold;">
+                              狂送 HTML5与CSS3权威指南
+                          </a></li>
+                      </ul>
+                    </div>
+                    <div id="fr_register">
+                        <div class="head-box"><img src="imgs/default.gif" alt="头像" class="default"/></div>
+                        <div class="name-wrap"><p>HI!您好</p><p>欢迎来到极客学院。</p>
+                            <a href="#" class="fr_re">登录</a><a href="#" class="fr_lo">注册</a></div>
+                    </div>
+                    <div id="fr_rest">
+                        <div class="fr_answers">
+                            <ul>
+                                <li><span class="question icon"></span><span>问答</span><span class="angle-bottom"></span></li>
+                                <li><span class="wiki icon"></span><span>Wiki</span><span class="angle-bottom"></span></li>
+                                <li><span class="course1 icon"></span><span>课程</span><span class="angle-bottom"></span></li>
+                                <li><span class="association icon"></span><span>课程</span><span class="angle-bottom"></span></li>
+                            </ul>
+                        </div>
+                        <div class="fr_knowledge">
+                           <ul>
+                               <li><span class="download icon"></span><span>下载</span></li>
+                               <li><span class="intellectual icon"></span><span>知识</span></li>
+                               <li><span class="profession icon"></span><span>职业</span></li>
+                               <li><span class="VIP icon"></span><span>VIP</span></li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 公开课-->
+            <div id="openClass">
+                <div id="oc_live"><a href="#"></a></div>
+                <div id="oc_wk1">
+                    <ul id="oc_week">
+                        <li>3月28日[周一]</li>
+                        <li>3月29日[周二]</li>
+                        <li>3月30日[周三]</li>
+                        <li>3月31日[周四]</li>
+                        <li>4月01日[周五]</li>
+                    </ul>
+                </div>
+                <div id="oc_m1">
+                        <div id="oc_ap"><img src="imgs/apple2.png" alt="我是小苹果"/></div>
+                        <div id="oc_matter">
+                            <ul>
+                                <li><p>SpriteKit游戏开发用户交互之拖动图形<img src="imgs/free.png" alt="时间" class="oc_img3"/></p></li>
+                                <li><img src="imgs/teachericon.png" alt="时间" class="oc_img1"/>主讲：陈绍佳
+                                    <img src="imgs/clok.png" alt="时间" class="oc_img2"/>上午 10:00-上午 10:00</li>
+                                <li><p style="font-size: 12px;color: #8c8c8c;">SpriteKit是苹果公司开发的2D游戏开发利器，与Xcode完美结合</p></li>
+                            </ul>
+                        </div>
+                        <div id="oc_apply">
+                            <p>限额 <b style="color: red">300</b>人</p>
+                            <p><a href="#">预定名额</a></p>
+                        </div>
+                </div>
+                <div id="oc_m2">
+                    <div id="oc_ap2"><img src="imgs/android2.png" alt="我是小机器人"/></div>
+                    <div id="oc_matter2">
+                        <ul>
+                            <li><p>Groovy 的美妙<img src="imgs/free.png" alt="时间" class="oc_img3"/></p></li>
+                            <li><img src="imgs/teachericon.png" alt="时间" class="oc_img1" />主讲：陈绍佳
+                                <img src="imgs/clok.png" alt="时间" class="oc_img2"/>上午 10:00-上午 10:00</li>
+                            <li><p style="font-size: 12px;color: #8c8c8c;">初识 Groovy</p></li>
+                        </ul>
+                    </div>
+                    <div id="oc_apply2">
+                        <p>限额 <b style="color: red">300</b>人</p>
+                        <p><a href="#">预定名额</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 热门推荐-->
+            <div id="recommend">
+                <div id="re_hot">
+                        <ul>
+                            <li>热闹推荐</li>
+                            <li>最新课程</li>
+                            <li>免费课程</li>
+                            <li>项目实战</li>
+                            <li>全球首发</li>
+                            <li>企业合作</li>
+                        </ul>
+                </div>
+                <div id="re_course">
+                        <ul>
+                            <li>
+                                <a href="#"></a>
+                                <img src="imgs/az.jpg" alt="点我呀"/>
+                                <p>Android dumpsys 命令使用</p>
+                                <p class="p1">
+                                    <img src="imgs/clok.png" alt="时钟" class="img1"/>
+                                    <span>4课时 122分钟</span>
+                                    <img src="imgs/testtools.png" alt="工具" class="img2"/>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="imgs/re2.jpg" alt="点我呀"/>
+                                <p>Android dumpsys 命令使用</p>
+                                <p class="p1">
+                                    <img src="imgs/clok.png" alt="时钟" class="img1"/>
+                                    <span>4课时 122分钟</span>
+                                    <img src="imgs/testtools.png" alt="工具" class="img2"/>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="imgs/re3.jpg" alt="点我呀"/>
+                                <p>Android dumpsys 命令使用</p>
+                                <p class="p1">
+                                    <img src="imgs/clok.png" alt="时钟" class="img1"/>
+                                    <span>4课时 122分钟</span>
+                                    <img src="imgs/testtools.png" alt="工具" class="img2"/>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="imgs/re4.jpg" alt="点我呀"/>
+                                <p>Android dumpsys 命令使用</p>
+                                <p class="p1">
+                                    <img src="imgs/clok.png" alt="时钟" class="img1"/>
+                                    <span>4课时 122分钟</span>
+                                    <img src="imgs/testtools.png" alt="工具" class="img2"/>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="imgs/re5.png" alt="点我呀"/>
+                                <p>Android dumpsys 命令使用</p>
+                                <p class="p1">
+                                    <img src="imgs/clok.png" alt="时钟" class="img1"/>
+                                    <span>4课时 122分钟</span>
+                                    <img src="imgs/testtools.png" alt="工具" class="img2"/>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="imgs/re6.png" alt="点我呀"/>
+                                <p>Android dumpsys 命令使用</p>
+                                <p class="p1">
+                                    <img src="imgs/clok.png" alt="时钟" class="img1"/>
+                                    <span>4课时 122分钟</span>
+                                    <img src="imgs/testtools.png" alt="工具" class="img2"/>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="imgs/re7.jpg" alt="点我呀"/>
+                                <p>Android dumpsys 命令使用</p>
+                                <p class="p1">
+                                    <img src="imgs/clok.png" alt="时钟" class="img1"/>
+                                    <span>4课时 122分钟</span>
+                                    <img src="imgs/testtools.png" alt="工具" class="img2"/>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                                <img src="imgs/re8.jpg" alt="点我呀"/>
+                                <p>Android dumpsys 命令使用</p>
+                                <p class="p1">
+                                    <img src="imgs/clok.png" alt="时钟" class="img1"/>
+                                    <span>4课时 122分钟</span>
+                                    <img src="imgs/testtools.png" alt="工具" class="img2"/>
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <!-- 职业路径图-->
+            <div id="BOK">
+                <div id="bok_head">
+                    <div class="bok_h1">
+                       职业路径图
+                    </div>
+                    <div class="bok_h2">
+                        更多>>
+                    </div>
+                </div>
+                <div id="bok_jk">
+                        <ul>
+                            <li>
+                                <img src="imgs/bk1.png" alt="点我呀"/>
+                                <p style="font-size: 15px">WEB大前端工程师</p>
+                                <div class="bk_mm">
+                                    <p>月薪15K-30K</p>
+                                    <p>Web开发的未来趋势</p>
+                                </div>
+                                    <a href="#"class="bk_btn">立即学习</a>
+                            </li>
+                            <li>
+                                <img src="imgs/bk2.png" alt="点我呀"/>
+                                <p style="font-size: 15px">WEB大前端工程师</p>
+                                <div class="bk_mm">
+                                    <p>月薪15K-30K</p>
+                                    <p>Web开发的未来趋势</p>
+                                </div>
+                                <a href="#"class="bk_btn">立即学习</a>
+                            </li>
+                            <li>
+                                <img src="imgs/bk3.png" alt="点我呀"/>
+                                <p style="font-size: 15px">WEB大前端工程师</p>
+                                <div class="bk_mm">
+                                    <p>月薪15K-30K</p>
+                                    <p>Web开发的未来趋势</p>
+                                </div>
+                                <a href="#"class="bk_btn">立即学习</a>
+                            </li>
+                            <li>
+                                <img src="imgs/bk4.png" alt="点我呀"/>
+                                <p style="font-size: 15px">WEB大前端工程师</p>
+                                <div class="bk_mm">
+                                    <p>月薪15K-30K</p>
+                                    <p>Web开发的未来趋势</p>
+                                </div>
+                                <a href="#"class="bk_btn">立即学习</a>
+                            </li>
+                            <li>
+                                <img src="imgs/bk5.png" alt="点我呀"/>
+                                <p style="font-size: 15px">WEB大前端工程师</p>
+                                <div class="bk_mm">
+                                    <p>月薪15K-30K</p>
+                                    <p>Web开发的未来趋势</p>
+                                </div>
+                                <a href="#"class="bk_btn">立即学习</a>
+                            </li>
+                            <li>
+                                <img src="imgs/bk6.png" alt="点我呀"/>
+                                <p style="font-size: 15px">WEB大前端工程师</p>
+                                <div class="bk_mm">
+                                    <p>月薪15K-30K</p>
+                                    <p>Web开发的未来趋势</p>
+                                </div>
+                                <a href="#"class="bk_btn">立即学习</a>
+                            </li>
+                            <li>
+                                <img src="imgs/bk7.png" alt="点我呀"/>
+                                <p style="font-size: 15px">WEB大前端工程师</p>
+                                <div class="bk_mm">
+                                    <p>月薪15K-30K</p>
+                                    <p>Web开发的未来趋势</p>
+                                </div>
+                                <a href="#"class="bk_btn">立即学习</a>
+                            </li>
+                            <li>
+                                <img src="imgs/bk8.png" alt="点我呀"/>
+                                <p style="font-size: 15px">WEB大前端工程师</p>
+                                <div class="bk_mm">
+                                    <p>月薪15K-30K</p>
+                                    <p>Web开发的未来趋势</p>
+                                </div>
+                                <a href="#"class="bk_btn">立即学习</a>
+                            </li>
+                            <li>
+                                <img src="imgs/bk9.png" alt="点我呀"/>
+                                <p style="font-size: 15px">WEB大前端工程师</p>
+                                <div class="bk_mm">
+                                    <p>月薪15K-30K</p>
+                                    <p>Web开发的未来趋势</p>
+                                </div>
+                                <a href="#"class="bk_btn">立即学习</a>
+                            </li>
+                            <li>
+                                <img src="imgs/bk10.png" alt="点我呀"/>
+                                <p style="font-size: 15px">WEB大前端工程师</p>
+                                <div class="bk_mm">
+                                    <p>月薪15K-30K</p>
+                                    <p>Web开发的未来趋势</p>
+                                </div>
+                                <a href="#"class="bk_btn">立即学习</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <!-- 知识体系图-->
+            <div id="Wiki">
+                <div id="wk_head">
+                    <div class="wk_h1">
+                        知识体系图
+                    </div>
+                    <div class="wk_h2">
+                        更多>>
+                    </div>
+                </div>
+                <div id="wk_jk">
+                    <ul>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/wk1.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK2.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK3.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK4.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK5.jpg" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK6.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK7.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK8.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK9.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK10.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK11.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK12.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK13.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK14.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK15.jpg" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK16.jpg" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK17.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK18.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK19.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK20.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK21.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK22.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK23.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wk_div">
+                                <img src="imgs/WK24.png" alt="点我呀" class="wk_img"/>
+                                <p style="font-size: 15px">Android</p>
+                                <p style="font-size: 14px;color: #35b558;">90门课程</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 精品系列课程-->
+            <div id="Boutique">
+                <div id="Bq_head">
+                    <div class="Bq_h1">
+                        精品课程系列
+                    </div>
+                    <div class="Bq_h2">
+                        <a href="#">更多>></a>
+                    </div>
+                </div>
+                <div id="Bq_jk">
+                    <ul>
+                        <li>
+                            <div class="Bq_1">
+                                <p style="font-size: 14px">Java 设计模式</p>
+                                <img src="imgs/Bq1.jpg" alt="Java" class="Bq_img" />
+                                <p style="color: gray">24门 76489人学习 <a href="#" style="margin-left: 50px">收藏</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Bq_1">
+                                <p style="font-size: 14px">Java 设计模式</p>
+                                <img src="imgs/Bq2.jpg" alt="Java" class="Bq_img" />
+                                <p style="color: gray">24门 76489人学习 <a href="#" style="margin-left: 50px">收藏</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Bq_1">
+                                <p style="font-size: 14px">Java 设计模式</p>
+                                <img src="imgs/Bq3.jpg" alt="Java" class="Bq_img" />
+                                <p style="color: gray">24门 76489人学习 <a href="#" style="margin-left: 50px">收藏</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Bq_1">
+                                <p style="font-size: 14px">Java 设计模式</p>
+                                <img src="imgs/Bq4.jpg" alt="Java" class="Bq_img" />
+                                <p style="color: gray">24门 76489人学习 <a href="#" style="margin-left: 50px">收藏</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- WIKI（电子书）-->
+            <div id="e-book">
+                <div id="eb_head">
+                    <div class="eb_h1">
+                        Wiki
+                    </div>
+                    <div class="eb_h2">
+                        <a href="#">更多>></a>
+                    </div>
+                </div>
+                <div id="eb_jk">
+                       <div id="eb_jk1">
+                           <div class="eb_tj">
+                               <h5 class="eb_h5">推荐</h5>
+                           </div>
+                           <div class="eb_img">
+                               <div class="eb_img1"><img src="imgs/eb1.jpg" alt="bk1" style="width: 142px;height: 200px;"/>
+                                   <p class="eb_text">Java程序员眼中的 Linux</p>
+                                   <p class="ed_textCl">120页/30章</p>
+                               </div>
+                               <div class="eb_img2"><img src="imgs/eb2.jpg" alt="bk1" style="width: 142px;height: 200px;"/>
+                                   <p class="eb_text">Dijango 搭建博客</p>
+                                   <p class="ed_textCl">120页/30章</p>
+                               </div>
+                           </div>
+                           <div class="eb_li">
+                               <ul>
+                                   <li><a href="#">*Lua教程<span>96页/25章</span></a> </li>
+                                   <li><a href="#">*ios人机交互指南<span>294页/48章</span></a></li>
+                                   <li><a href="#">*Struts 2教程<span>154页/31章</span></a></li>
+                               </ul>
+                           </div>
+                       </div>
+                    <div id="eb_jk2">
+                        <div class="eb_tj">
+                            <h5 class="eb_h5">最新</h5>
+                        </div>
+                        <div class="eb_img">
+                            <div class="eb_img1"><img src="imgs/eb3.jpg" alt="bk1" style="width: 142px;height: 200px;"/>
+                                <p class="eb_text">Java程序员眼中的 Linux</p>
+                                <p class="ed_textCl">120页/30章</p>
+                            </div>
+                            <div class="eb_img2"><img src="imgs/eb4.jpg" alt="bk1" style="width: 142px;height: 200px;"/>
+                                <p class="eb_text">Dijango 搭建博客</p>
+                                <p class="ed_textCl">120页/30章</p>
+                            </div>
+                        </div>
+                        <div class="eb_li">
+                            <ul>
+                                <li><a href="#">*Lua教程<span>96页/25章</span></a> </li>
+                                <li><a href="#">*ios人机交互指南<span>294页/48章</span></a></li>
+                                <li><a href="#">*Struts 2教程<span>154页/31章</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="eb_jk3">
+                        <div class="eb_tj">
+                            <h5 class="eb_h5">推荐</h5>
+                        </div>
+                        <div class="eb_img">
+                            <div class="eb_img1"><img src="imgs/eb5.jpg" alt="bk1" style="width: 142px;height: 200px;"/>
+                                <p class="eb_text">Java程序员眼中的 Linux</p>
+                                <p class="ed_textCl">120页/30章</p>
+                            </div>
+                            <div class="eb_img2"><img src="imgs/eb6.jpg" alt="bk1" style="width: 142px;height: 200px;"/>
+                                <p class="eb_text">Dijango 搭建博客</p>
+                                <p class="ed_textCl">120页/30章</p>
+                            </div>
+                        </div>
+                        <div class="eb_li">
+                            <ul>
+                                <li><a href="#">*Lua教程<span>96页/25章</span></a> </li>
+                                <li><a href="#">*ios人机交互指南<span>294页/48章</span></a></li>
+                                <li><a href="#">*Struts 2教程<span>154页/31章</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 合作企业-->
+            <div id="CJV">
+                <div id="cj_head">
+                    <div class="eb_h1">
+                        战略合作企业
+                    </div>
+                    <div class="eb_h2">
+                        <a href="#">更多>></a>
+                    </div>
+                </div>
+                <div id="cj_jk">
+                    <img src="imgs/cj1.jpg" alt="Microsoft"/>
+                    <img src="imgs/cj2.jpg" alt="腾讯"/>
+                    <img src="imgs/cj3.jpg" alt="Microsoft"/>
+                    <img src="imgs/cj4.jpg" alt="腾讯"/>
+                    <img src="imgs/cj5.jpg" alt="Microsoft"/>
+                    <img src="imgs/cj6.jpg" alt="腾讯"/>
+                </div>
+            </div>
+            <!-- 合作院校-->
+            <div id="school">
+                <div id="sc_head">
+                    <div class="eb_h1">
+                        合作院校
+                    </div>
+                    <div class="eb_h2">
+                        <a href="#">更多>></a>
+                    </div>
+                </div>
+                <div id="sc_jk">
+                    <img src="imgs/sc1.png" alt="Microsoft"/>
+                    <img src="imgs/sc2.png" alt="腾讯"/>
+                    <img src="imgs/sc3.png" alt="Microsoft"/>
+                    <img src="imgs/sc4.png" alt="腾讯"/>
+                    <img src="imgs/sc5.png" alt="Microsoft"/>
+                    <img src="imgs/sc6.png" alt="腾讯"/>
+                    <img src="imgs/sc7.png" alt="腾讯"/>
+                </div>
+            </div>
+            <!-- 媒体报道-->
+            <div id="medium">
+                <div id="me_head">
+                    <div class="eb_h1">
+                        战略合作企业
+                    </div>
+                </div>
+                <div id="me_jk">
+                    <img src="imgs/md1.jpg" alt="Microsoft"/>
+                    <img src="imgs/md2.jpg" alt="腾讯"/>
+                    <img src="imgs/md3.jpg" alt="Microsoft"/>
+                    <img src="imgs/md4.jpg" alt="腾讯"/>
+                    <img src="imgs/md5.jpg" alt="Microsoft"/>
+                    <img src="imgs/md6.jpg" alt="腾讯"/>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer id="fd">
+            <div id="fb_con">
+                <div class="fb_jiKe">
+                   <h4 class="fb_h4">极客学院</h4>
+                    <ul>
+                        <li><a href="#">&#149;职业课程库</a></li>
+                        <li><a href="#">&#149;知识体系图</a></li>
+                        <li><a href="#">&#149;职业路径图</a> </li>
+                        <li><a href="#">&#149;企业课程</a></li>
+                        <li><a href="#">&#149;资源下载</a></li>
+                        <li><a href="#">&#149;课程标签</a></li>
+                    </ul>
+                </div>
+                <div class="fb_jiKe">
+                    <h4 class="fb_h4">网站服务</h4>
+                    <ul>
+                        <li><a href="#">&#149;课程需求</a></li>
+                        <li><a href="#">&#149;免费体验VIP</a></li>
+                        <li><a href="#">&#149;黑板报</a> </li>
+                        <li><a href="#">&#149;网站地图</a></li>
+                    </ul>
+                </div>
+                <div class="fb_jiKe">
+                    <h4 class="fb_h4">帮助中心</h4>
+                    <ul>
+                        <li><a href="#">&#149;技术问答</a></li>
+                        <li><a href="#">&#149;VIP权益</a></li>
+                        <li><a href="#">&#149;常见问题</a> </li>
+                        <li><a href="#">&#149;服务条款</a></li>
+                        <li><a href="#">&#149;版权声明</a> </li>
+                        <li><a href="#">&#149;免责声明</a></li>
+                    </ul>
+                </div>
+                <div class="fb_jiKe">
+                    <h4 class="fb_h4">交流合作</h4>
+                    <ul>
+                        <li><a href="#">&#149;关于我们</a></li>
+                        <li><a href="#">&#149;联系我们</a></li>
+                        <li><a href="#">&#149;社会招聘</a> </li>
+                        <li><a href="#">&#149;布道师招募</a></li>
+                        <li><a href="#">&#149;合作咨询</a> </li>
+                        <li><a href="#">&#149;友情连接</a></li>
+                        <li><a href="#">&#149;实战教练招募</a></li>
+                    </ul>
+                </div>
+                <div class="fb_jiKe jKn">
+                    <div class="fb_top">
+                        <h4 class="fb_h4 h42">极客学院，编程是一种信仰！</h4>
+                        <div class="fb_weBo">
+                            <div>
+                                <a href="#">
+                                    <div>
+                                        <img src="imgs/iphone.png" alt="#" class="fb_img"/>
+                                    </div>
+                                   <div class="fb_left"><h4>手机客户端</h4><p>离线缓存，随时学习></p></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="fb_weBo">
+                            <div class="fb_a">
+                                <a href="#">
+                                    <div class="fb_img1 weBo">
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="fb_img1 tie">
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="fb_img1 wexi">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="fb_weBo">
+                                <div>
+                                    <a href="#">
+                                        <div class="keFu">
+                                        </div>
+                                        <div class="fb_left"><h5>联系我们</h5><p>工作日9:00-21:00在线</p></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <div id="SM">Copyright © 2013-2016  All Rights Reversed. 北京优亿致远无线技术有限公司 jikexueyuan.com 京ICP备11018032号-8 京公网安备11010802013056
+    </div>
+</div>
+<script src="js/style.js" type="text/javascript"></script>
+</body>
+</html>

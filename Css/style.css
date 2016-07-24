@@ -1,0 +1,1210 @@
+@charset "UTF-8";
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-size: 12px;
+    /*overflow: hidden;*/
+    min-width: 1800px;
+    min-height: 4050px;
+}
+div{
+    display: block;
+}
+
+/*大容器*/
+#container{
+    min-width: 1800px;
+    min-height: 4050px;
+    height: 100%;
+    position: relative;
+}
+/*LOGO*/
+#logo{
+    float: left;
+    margin-top: 10px;
+    display: block;/*记得一定要把a标签转换成块才有用*/
+    width: 113px;
+    height: 41px;
+    background: url("../imgs/logo.png") repeat;
+    background-size: cover;
+}
+
+/*搜索框容器*/
+#input{
+    float: left;
+    width: 700px;
+    text-align: center;
+    margin-left:250px;
+}
+/*搜索框标签*/
+#input .course{
+    position: absolute;/*走了可以给别人占位*/
+    margin-top: 18px;
+    margin-left: 180px;
+}
+#input a{
+    display: inline-block;
+    color: gray;
+    background: #f3f3f3;
+    padding: 2px 4px;
+    margin-left: 5px;
+}
+#input a:hover{
+    background: #999999;
+    color: white;
+}
+/*搜索框按钮*/
+#input .search{
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    border-left: 1px solid #dfdfdf;
+    background: url("../imgs/topsearch.png") 10px 8px no-repeat;
+    background-size: 24px 24px;
+    margin-left: -12px;
+    margin-top: 10px;
+}
+#input .search:hover{
+    background: green url("../imgs/topsearch2.png") 10px 8px no-repeat;
+    background-size: 24px 24px;
+}
+
+/*搜索输入框*/
+#input input[type="text"]{
+    margin-top: 10px;
+    width: 378px;
+    height: 36px;
+    text-indent:15px;
+    float: left;
+    border: 1px solid #dfdfdf;
+}
+/*去掉搜索框的聚焦边框*/
+#input input[type="text"]:focus{
+    outline: none;
+}
+
+
+/*信息图标*/
+#message{
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("../imgs/massage.gif") repeat;
+    background-size: cover;
+}
+/*头部绿色下划线*/
+#hr1{
+    width: 100%;
+    height: 1px;
+    background: url("../imgs/green.png") repeat-x;
+    background-size: 15px;
+}
+/*头部灰色下划线*/
+#hr2{
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+#clo{
+    float: left;
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 20px;
+}
+/*头部文件变色*/
+#yellow,#green,#red{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 6px;
+    border-radius: 2px;
+    border:1px solid #f5f5f5;
+    cursor:pointer;
+}
+.yellow{
+    background: yellow;
+}
+.green{
+    background: green;
+}
+.green div#h2left a,.green div#h2right span,.red div#h2left a,.red div#h2right span{
+    color: white;
+}
+.red{
+    background: red;
+}
+/*信息、QQ登录、登录、注册框*/
+#register{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 25px 0 2px 0;
+    padding: 0 384px 0 0;
+}
+#register a,span{
+    float: left;
+    display: block;
+    margin-left: 5px;
+    color: #222222;
+}
+#register span{
+    display: block;
+    width: 1.5px;
+    height: 16px;
+    background: #999999;
+    margin: 0 10px 0 10px;
+}
+#message{
+    margin-top: 4px;
+}
+
+
+
+/*头部1*/
+#navBox-one,#navBox-tow{
+    width: 60%;
+    height: 41px;
+    margin: 0 auto;
+}
+#navBox-one .hr1{
+    float: none;
+    display:none;
+}
+/*首页、职业课程、就业学习、极客社区、极客+*/
+#h2left{
+    float: left;
+}
+/*左侧文字*/
+#h2left a{
+    display: block;
+    float: left;
+    margin: 5px 65px 5px 0;
+    padding: 5px;
+    color: #333333;
+    font-size: 14px;
+}
+#h2left a:hover{
+    color: #35b558;
+}
+/*右侧文字*/
+#h2right a{
+    display: block;
+    float: right;
+    color: #333333;
+    font-size: 14px;
+    margin: 5px 0 5px 25px;
+    padding: 5px;
+}
+/*把里面的SPAN元素全转成块，然后全部向左浮动*/
+#h2right span{
+    display: block;
+    float: left;
+}
+#h2right span:hover{
+    color: #35b558;
+}
+/*APP下载\求课程\VIP会员图标*/
+#app{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    background: url("../imgs/dl-icon.png") no-repeat;
+    background-size: 16px 16px;
+}
+#course{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    background: url("../imgs/star-icon.png") no-repeat;
+    background-size: 16px 16px;
+}
+#vip{
+    float: left;
+    width: 21px;
+    height: 14px;
+    margin-top: 5px;
+    background: url("../imgs/vip-icon.png") no-repeat;
+    background-size: 21px 14px;
+}
+
+
+
+/*article的外框*/
+#article{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+/*尾部外框*/
+#footer{
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*快讯*/
+#flash{
+    min-width: 1149px;
+    height: auto;
+    position: absolute;
+    /*overflow: hidden;*/
+    /*top: 10px;*/
+}
+/*快讯相关的class或ID用F_开头，以下的也一样*/
+#f_left{
+    float: left;
+    color: white;
+    width: 209px;
+    border-top: 2px solid #35b558;
+    border-right: 1px solid #F5F5F5;
+    border-left: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+    height: 16px;
+    margin-bottom: -403px;/*无限长，会溢出*/
+    padding-bottom: 403px;/*无限长，会溢出*/
+    margin-left: -100%;/*向上*/
+    /*position: relative;/!*送回到对应位置，相对于自己*!/*/
+    /*left:-150px;*/
+}
+/*f_left左边的分割线*/
+#f_left hr{
+    border: 1px solid #F5F5F5;
+}
+/*f_left左侧里所有的DIV*/
+#f_left div{
+    float: left;
+    display: inline-block;
+    width: 210px;
+    height: 40px;
+    font-size: 13px;
+}
+/*f_left左侧里所有的DIV鼠标路过效果*/
+#f_left div:hover{
+    z-index: 999;
+    border-left:2px solid #35b558;
+    border-top: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+    border-right: 1px solid white;
+    font-size: 14px;
+}
+/*f_left左侧里所有的span图片*/
+#f_left span{
+    float: right;
+    margin-top: 10px;
+    padding-right: 10px;
+    width: 24px;
+    height: 24px;
+    background: url("../imgs/iconfont-right.png") no-repeat;
+    background-size: 24px 24px;
+}
+/*f_left左侧里所有的A的效果，靠左，然后有一定的间距*/
+#f_left a{
+    display: block;
+    float: left;
+    margin-top: 10px;
+    padding-left: 15px;
+    color: #080808;
+}
+/*f_left左侧里所有的A鼠标路过的效果*/
+#f_left a:hover{
+    color: #35b558;
+}
+
+
+#f_middle{
+    /*background: yellow;*/
+    float: left;
+    width: 100%;/*块级*/
+    /*margin-bottom: -403px;/!*无限长，会溢出*!/*/
+    /*padding-bottom: 403px;/!*无限长，会溢出*!/*/
+}
+/*首页广告位图片*/
+#fm_img{
+    margin-left: 220px;
+    margin-right: 220px;
+    width: 700px;
+    height: 260px;
+    border: 1px solid #F5F5F5;
+    background: url("../imgs/HTML5.jpg") repeat;
+    background-size: cover;
+}
+#fm_course{
+    margin-top: 23px;
+    margin-left: 220px;
+    margin-right: 220px;
+    width: 700px;
+    height: 135px;
+    border: 1px solid #F5F5F5;
+    display: -webkit-flex;
+}
+/*配合上面的display可以让DIV平均分布*/
+#html5{
+    height: 132px;
+    -webkit-flex: 1;
+    text-align: center;
+    border-right: 1px solid #F5F5F5;
+}
+#Android{
+    height: 132px;
+    -webkit-flex: 1;
+    text-align: center;
+    border-right: 1px solid #F5F5F5;
+}
+#apple{
+    height: 132px;
+    -webkit-flex: 1;
+    text-align: center;
+}
+#html5 .html5{
+    margin: 12px auto;
+    width: 60px;
+    height: 60px !important;
+    background: url("../imgs/html.png") no-repeat;
+    background-size: 60px 60px;
+}
+#Android .Android{
+    margin: 12px auto;
+    width: 60px;
+    height: 60px !important;
+    background: url("../imgs/android.png") no-repeat;
+    background-size: 60px 60px;
+}
+#apple .apple{
+    margin: 12px auto;
+    width: 60px;
+    height: 60px !important;
+    background: url("../imgs/apple.png") no-repeat;
+    background-size: 60px 60px;
+}
+/*article的右侧部分*/
+#f_right{
+    border: 1px solid #F5F5F5;
+    color: white;
+    float: right;
+    width: 209px;
+    /*margin-bottom: -403px;/!*无限长，会溢出*!/*/
+    /*padding-bottom: 403px;/!*无限长，会溢出*!/*/
+    margin-left: -100%;/*向上*/
+    /*垂直*/
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+#fr_kx{
+    height: 155px;
+    -webkit-flex:1;
+    border-bottom: 1px solid #F5F5F5;
+}
+#fr_kx h3{
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+    margin-left:10px;
+}
+#fr_kx li{
+   margin-left: 10px;
+    line-height: 2.5;
+    font-size: 12px;
+}
+#fr_register{
+    height: 95px;
+    -webkit-flex:1;
+    border-bottom: 1px solid #F5F5F5;
+}
+#fr_register .head-box{
+    float: left;
+    color: #080808;
+}
+#fr_register .name-wrap{
+    float: left;
+    color: #080808;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#fr_register .default{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+/*登录按钮*/
+.fr_re{
+    background: #FB5D20;
+    color: white;
+    padding: 5px 10px;
+    position: relative;
+    top: 10px;
+    margin-right: 15px;
+}
+/*注册按钮*/
+.fr_lo{
+    background: #35b558;
+    color: white;
+    padding: 5px 10px;
+    position: relative;
+    top: 10px;
+    margin-right: 15px;
+}
+
+#fr_rest{
+    height: 165px;
+    -webkit-flex:1;
+}
+#fr_rest .fr_answers{
+    height: 83px;
+    -webkit-flex:1;
+    color: red;
+    border-bottom: 1px solid #F5F5F5;
+}
+#fr_rest .fr_knowledge{
+    height: 83px;
+    -webkit-flex:1;
+    color: red;
+}
+.angle-bottom{
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #E4E4E4;
+    box-sizing: content-box;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    margin: 0 auto
+}
+
+#fr_rest li{
+    float: left;
+    display: block;
+    /*-webkit-flex: 1;*/
+    width: 51.2px;
+    color: #000;
+    height: 81px;
+    font-size: 12px;
+    line-height: 23px;
+    text-align: center;
+    border-right: 1px solid #F5F5F5;
+}
+#fr_rest span{
+    float: none;!important;
+    text-align: center!important;
+}
+
+.icon{
+    margin-left: 8px;
+    margin-top: 15px;
+    display: block;
+    width: 33px;
+    height: 33px;
+}
+/*上半部分*/
+.question{
+    background: url("../imgs/recommend.png");
+    background-size: 71px 232px;
+}
+.wiki{
+    background: url("../imgs/recommend.png") 0 205px;
+    background-size: 71px 232px;
+}
+.course1{
+    background: url("../imgs/recommend.png") 0 176px;
+    background-size: 71px 232px;
+}
+.association{
+    background: url("../imgs/recommend.png") 0 147px;
+    background-size: 71px 232px;
+}
+/*下半部分*/
+.download{
+    background: url("../imgs/recommend.png") 0 118px;
+    background-size: 71px 232px;
+}
+.intellectual{
+    background: url("../imgs/recommend.png") 0 90px;
+    background-size: 71px 232px;
+}
+.profession{
+    background: url("../imgs/recommend.png") 0 62px;
+    background-size: 71px 232px;
+}
+.VIP{
+    background: url("../imgs/recommend.png") 0 33px;
+    background-size: 71px 232px;
+}
+/*公开课*/
+#openClass{
+    min-width: 1149px;
+    height: 199px;
+    position: absolute;
+    top:440px;
+    border: 1px solid #F5F5F5;
+}
+#oc_live{
+    width: 210px;
+    height: 200px;
+    border-right: 1px solid #F5F5F5;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    float: left;
+}
+#oc_live a{
+    display: block;
+    width: 190px;
+    height: 190px;
+    background: url("../imgs/live.png") repeat;
+    background-size: 190px 190px;
+}
+#oc_week li{
+    float: left;
+    display: block;
+    width: 187px;
+    height: 40px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 38px;
+    border-bottom: 1px solid #f5f5f5;
+}
+#oc_week li:hover{
+    color: #35b558;
+    border-bottom: 0;
+    border-top: 2px solid #35b558;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+#oc_wk1{
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+/*直播报名课程列表1*/
+#oc_ap,#oc_matter,#oc_apply{
+    float: left;
+}
+#oc_m1{
+    display: block;
+    border-bottom: 1px solid #f5f5f5;
+    height: 82px;
+}
+#oc_ap{
+    width: 150px;
+    height: 75px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+#oc_matter{
+    margin-left: -30px;
+    margin-top: 8px;
+    width: 450px;
+}
+#oc_ap img{
+    width: 44px;
+    height: 44px;
+    background-size: 44px 44px;
+}
+#oc_matter p{
+    font-size: 14px;
+    display: block;
+}
+#oc_matter span{
+    color: #8c8c8c;
+}
+#oc_apply {
+    float: right!important;
+    margin-right: 30px;
+    margin-top: 15px;
+    text-align:right;
+}
+#oc_apply a{
+    display: block;
+    background: #35b558;
+    text-align: center;
+    color: white;
+    padding: 2px 10px;
+}
+/*直播报名课程列表2*/
+#oc_ap2,#oc_matter2,#oc_apply2，#oc_m2{
+    float: left;
+}
+#oc_ap2{
+    width: 150px;
+    height: 75px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+#oc_matter2{
+    margin-left: -30px;
+    margin-top: 8px;
+    width: 450px;
+}
+#oc_ap2 img{
+    width: 44px;
+    height: 44px;
+    background-size: 44px 44px;
+}
+#oc_matter2 p{
+    font-size: 14px;
+    display: block;
+}
+#oc_matter2 span{
+    color: #8c8c8c;
+}
+#oc_apply2 {
+    float: right!important;
+    margin-right: 30px;
+    margin-top: 15px;
+    text-align:right;
+}
+#oc_apply2 a{
+    display: block;
+    background: #35b558;
+    text-align: center;
+    color: white;
+    padding: 2px 10px;
+}
+.oc_img1{
+    width: 13px;
+    height: 15px;
+    margin-top: 2px;
+}
+.oc_img2{
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    margin-left: 10px
+}
+.oc_img3{
+    width: 50px;
+    height: 16px;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+/*热门推荐*/
+#recommend{
+     min-width: 1149px;
+     height: auto;
+     position: absolute;
+     top:650px;
+ }
+/*课程头*/
+#re_hot{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#re_course{
+    margin-left: 40px;
+    margin-top: 40px;
+    position: relative;
+ }
+#re_hot li{
+    display: block;
+    float: left;
+    padding: 5px 65px;
+    font-size: 14px;
+    border-bottom: 2px solid #f5f5f5;
+}
+#re_hot li:hover{
+    color: #35b558;
+    border-bottom: 2px solid #35b558;
+}
+/*课程列表*/
+#recommend{
+    min-width: 1149px;
+    height: 660px;
+}
+#re_course li{
+    float: left;
+    width: 237px;
+    height: 200px;
+    border: 1px solid #f5f5f5;
+    margin-right: 35px;
+    margin-top: 20px;
+}
+#re_course .p1{
+    position:relative;
+    bottom: -30px;
+    margin-left: 5px;
+}
+#re_course .img1{
+    float: left;
+    width: 18px;
+    height: 18px;
+}
+#re_course .img2{
+    float: right;
+    width: 18px;
+    height: 18px;
+    padding-right: 10px;
+}
+#re_course a{
+    display: block;
+    position: absolute;
+    width: 240px;
+    height: 153px;
+}
+
+/*知识体系图*/
+#BOK{
+    min-width: 1149px;
+    height: auto;
+    position: absolute;
+    top:1200px;
+}
+#bok_head{
+  padding-bottom: 15px;
+}
+#bok_head .bok_h1{
+    font-size: 18px;
+    margin-left: 35px;
+    text-align: left;
+}
+#bok_head .bok_h2{
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #2d85ca;
+    margin-top: -25px;
+}
+#bok_jk{
+    margin-left: 40px;
+    text-align:center;
+}
+#bok_jk li{
+    float: left;
+    width: 210px;
+    height: 280px;
+    border: 1px solid #f5f5f5;
+}
+#bok_jk .bk_mm{
+    margin-top: 15px;
+    color: #999999;
+}
+#bok_jk a{
+    margin-top: 12px;
+    margin-left: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #35b558;
+    text-align: center ;
+    display: block;
+    width: 140px;
+    height: 35px;
+    background: #f3fff6;
+    border: 1px solid #35b558;
+}
+#bok_jk a:hover{
+    color: white;
+    background: #35b558;
+}
+/*Wiki*/
+#Wiki{
+    min-width: 1149px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:1850px;
+}
+#wk_head{
+    padding-bottom: 15px;
+}
+#wk_head .wk_h1{
+    font-size: 18px;
+    margin-left: 35px;
+    text-align: left;
+}
+#wk_head .wk_h2{
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #2d85ca;
+    margin-top: -25px;
+}
+#wk_jk{
+    margin-left: 40px;
+    text-align:center;
+}
+#wk_jk li{
+    float: left;
+    width: 173px;
+    height: 120px;
+    border: 1px solid #f5f5f5;
+}
+#wk_jk .wk_div{
+margin-top: 10px;
+}
+
+#wk_jk .wk_img{
+    width: 50px;
+    height: 50px;
+}
+/*精品系列课程*/
+#Boutique{
+    min-width: 1149px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:2430px;
+}
+#Bq_head{
+    padding-bottom: 15px;
+}
+#Bq_head .Bq_h1{
+    font-size: 18px;
+    margin-left: 35px;
+    text-align: left;
+}
+#Bq_head .Bq_h2 a{
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #2d85ca;
+    margin-top: -25px;
+}
+#Bq_jk{
+    margin-left: 40px;
+}
+#Bq_jk li{
+    float: left;
+    width: 250px;
+    height: 230px;
+    border: 1px solid #F5F5F5;
+    margin-right: 15px;
+}
+#Bq_jk li:hover{
+    border: 1px solid #35b558;
+}
+#Bq_jk div{
+    margin-left: 25px;
+}
+#Bq_jk a{
+    color: white;
+    background: #35b558;
+    padding: 5px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+#Bq_jk .Bq_img{
+    width: 201px;
+    height: 160px;
+    margin: 6px auto
+}
+
+/*电子书*/
+#e-book{
+    min-width: 1149px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:2750px;
+}
+#eb_head .eb_h1{
+    font-size: 18px;
+    margin-left: 35px;
+    text-align: left;
+}
+#eb_head .eb_h2 a{
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #2d85ca;
+    margin-top: -25px;
+}
+#eb_head{
+    padding-bottom: 15px;
+}
+
+/*书面内容*/
+#eb_jk1 {
+    float: left;
+    border: 1px solid #F5F5F5;
+    width: 350px;
+    height: 370px;
+    margin-left: 40px;
+}
+#eb_jk2,#eb_jk3{
+    float: left;
+    border: 1px solid #F5F5F5;
+    width: 350px;
+    height: 370px;
+}
+#eb_jk1:hover{
+    border: 1px solid #35b558;
+}
+.eb_tj{
+    float: left;
+  }
+.eb_img{
+    float: left;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.eb_h5{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.eb_img1,.eb_img2{
+    float: left;
+    text-align: center;
+    margin-right: 15px;
+}
+.eb_text{
+    display:block;
+    width: 140px;
+    height: auto;
+    font-size: 13px;
+    text-align: center;
+    /*设置文字省略*/
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.ed_textCl{
+    color: #999999;
+}
+.eb_li{
+    float: left;
+    margin-left: 20px;
+}
+.eb_li li{
+    font-size: 12px;
+    color: #999;
+    display: block;
+}
+.eb_li a{
+    color: #999;
+    font-size: 12px;
+    display: block;
+    width: 300px;
+}
+.eb_li span{
+    text-align: right;
+    display: block;
+    float: right;
+    color: #999;
+}
+.eb_li span:hover,.eb_li a:hover{
+    color:#35b558
+}
+
+/*合作企业*/
+#CJV{
+    min-width: 1100px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:3200px;
+}
+#cj_head .eb_h1{
+    font-size: 18px;
+    margin-left: 35px;
+    text-align: left;
+}
+#cj_head .eb_h2 a{
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #2d85ca;
+    margin-top: -25px;
+}
+#cj_head{
+    padding-bottom: 15px;
+}
+#cj_jk {
+    float: left;
+    border: 1px solid #F5F5F5;
+    width: 1055px;
+    height: 100px;
+    margin-left: 40px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+#cj_jk img{
+    width: 150px;
+    height: 51px;
+    border: 1px solid #F5F5F5;
+    margin-right: 15px;
+}
+/*合作院校*/
+#school{
+    min-width: 1100px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:3400px;
+}
+#sc_head .eb_h1{
+    font-size: 18px;
+    margin-left: 35px;
+    text-align: left;
+}
+#sc_head .eb_h2 a{
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #2d85ca;
+    margin-top: -25px;
+}
+#sc_head{
+    padding-bottom: 15px;
+}
+#sc_jk {
+    float: left;
+    border: 1px solid #F5F5F5;
+    width: 1055px;
+    height: 130px;
+    margin-left: 40px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+#sc_jk img{
+    width: 110px;
+    height: 110px;
+    margin-right: 28px;
+}
+/*媒体报道*/
+#medium{
+    min-width: 1100px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:3630px;
+}
+#me_head .eb_h1{
+    font-size: 18px;
+    margin-left: 35px;
+    text-align: left;
+}
+
+#me_head{
+    padding-bottom: 15px;
+}
+#me_jk {
+    float: left;
+    border: 1px solid #F5F5F5;
+    width: 1055px;
+    height: 100px;
+    margin-left: 40px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+#me_jk img{
+    width: 150px;
+    height: 51px;
+    border: 1px solid #F5F5F5;
+    margin-right: 15px;
+}
+/*尾部*/
+#fd{
+    min-width: 1110px;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    border-top: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+    background: #fafafa;
+    height: 260px;
+    overflow: hidden;
+}
+#SM{
+    margin-top: 5px;
+    min-width: 1110px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+#fb_con{
+    position: absolute;
+    left: 50%;
+    margin-left: -536px;
+}
+#fb_con a{
+    display: block;
+    padding-left:35px;
+    font-size: 12px;
+    color: gray;
+    line-height: 25px;
+}
+#fb_con a:hover,h4:hover{
+   color: #35b558;
+}
+.fb_h4{
+    color: gray;
+    padding-left: 35px;
+    font-size: 14px;
+}
+.h42{
+    color: #35b558;
+    margin-bottom: 10px;
+}
+.fb_jiKe{
+    margin-left: 80px;
+    margin-top: 45px;
+    float: left;
+    height:240px;
+    border-left: 1px solid  #E4E4E4;
+}
+.jKn{
+    margin-top: 0;
+    width: 260px;
+}
+.fb_top{
+    width: 260px;
+    position: absolute;
+    margin-top: 45px;
+}
+.fb_weBo div{
+    float: left;
+    margin-bottom: 5px;
+}
+.fb_img{
+    width: 21px;
+    height: 39px;
+}
+.fb_left{
+    margin-left:15px;
+}
+.fb_a a{
+    float: left;
+}
+.fb_img1{
+    width: 32px;
+    height: 32px;
+    background-size: 200px 200px;
+}
+.weBo{
+    background: url("../imgs/icon_7f8b929.png") -21px 201px;
+}
+.weBo:hover{
+    background: url("../imgs/icon_7f8b929.png") -21px 161px;
+}
+.tie{
+    background: url("../imgs/icon_7f8b929.png") -145px 201px;
+}
+.tie:hover{
+    background: url("../imgs/icon_7f8b929.png") -145px 161px;
+}
+.wexi{
+    background: url("../imgs/icon_7f8b929.png") -21px 120px;
+}
+.wexi:hover{
+    background: url("../imgs/icon_7f8b929.png") -21px 80px;
+}
+.keFu{
+    width: 40px;
+    height: 40px;
+    background: url("../imgs/kefu.png")no-repeat 0 0/80px 40px;/*缩放*/
+}
